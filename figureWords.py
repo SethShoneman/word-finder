@@ -12,7 +12,8 @@ while True:
     
     #generate a list of all possible combinations of inputted letters (may work slowly for larger sets)
     possibleList = []
-    while leng > 2:
+    #the program will only generate word combinations of 3 letters long and above, but that can be changed here     
+    while leng >= 3:
         combos = itertools.permutations(letters,leng)
         for x in combos:
             word = ""
